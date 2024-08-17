@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 3</title>
+</head>
+<body>
+<h1 style="margin: 0px;padding: 0px">Homework 3: World Projection Maps</h1>
+<div style="display:inline-flex; margin: 0px; padding: 0px;">
+    <h2>Deadline: </h2>
+    <h2 class="date">hw3</h2>
+    </div>
+
+    
+    <p class="x_elementToProof"><span data-ogsc="rgb(0, 0, 0)" >The objective of this homework is for you to get familiarized with projections. You will practice using the projection-on-the-fly feature in QGIS that can display the data in different projections. You will also generate vector and raster files in new projections.&nbsp;&nbsp;</span></p>
+    
+    <p><span data-ogsc="rgb(0, 0, 0)" >&nbsp;</span></p>
+    
+    <p class="x_elementToProof"><span data-ogsc="rgb(0, 0, 0)" >Watch the<span>&nbsp;</span><a data-auth="NotApplicable" data-linkindex="0" data-ogsc="" href="https://uncch.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=2a804862-ef5a-43cf-bcfc-b106014a9630" id="LPlnk" rel="noopener noreferrer" style="border: 0.0px;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;font-stretch: inherit;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;" target="_blank">following videos</a>&nbsp;related to projections to find out how to complete the following tasks.&nbsp;</span></p>
+    
+    <div data-ogsc="rgb(0, 0, 0)">&nbsp;</div>
+    
+    <ol data-editing-info="{&quot;orderedStyleType&quot;:1}" data-listchain="__List_Chain_51" start="1">
+        <li data-ogsc="rgb(0, 0, 0)" style="font-family: Aptos , Aptos_EmbeddedFont , Aptos_MSFontService , Calibri , Helvetica , sans-serif;font-size: 12.0pt;margin-top: 0.0in;margin-bottom: 0.0in;color: rgb(0,0,0);"><span data-ogsc="rgb(0, 0, 0)" style="border: 0.0px;color: rgb(0,0,0);font-family: UICTFontTextStyleBody , serif;font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: inherit;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;">Select a location of interest (LOI) in the south of the equator and east of the prime meridian.<span>&nbsp;</span></span><span data-ogsc="rgb(0, 0, 0)" style="border: 0.0px;color: rgb(0,0,0);font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: inherit;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;">&nbsp;</span></li>
+        <li data-ogsc="rgb(0, 0, 0)" >Find the latitude and longitude of the LOI.</span><span data-ogsc="rgb(0, 0, 0)" style="border: 0.0px;color: rgb(0,0,0);font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: inherit;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;">&nbsp;</span></li>
+        <li data-ogsc="rgb(0, 0, 0)" >Create the following layers.&nbsp;<span>&nbsp;</span></span><span data-ogsc="rgb(0, 0, 0)" style="border: 0.0px;color: rgb(0,0,0);font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: inherit;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;">&nbsp;</span></li>
+    </ol>
+    
+    <ul style="list-style-type: lower-alpha; margin-left: 20px;">
+        <li data-ogsc="rgb(0, 0, 0)" >A geojson file with the LOI in 4326&nbsp;<span>&nbsp;</span></span><span data-ogsc="rgb(0, 0, 0)" style="border: 0.0px;color: rgb(0,0,0);font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: inherit;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;">&nbsp;</span></li>
+        <li data-ogsc="rgb(0, 0, 0)" >A geojson file with the LOI in 3857</span><span data-ogsc="rgb(0, 0, 0)" style="border: 0.0px;color: rgb(0,0,0);font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: inherit;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;">&nbsp;</span></li>
+        <li data-ogsc="rgb(0, 0, 0)" >A geojson file with the LOI in the appropriate UTM zone.<span>&nbsp;</span></span><span data-ogsc="rgb(0, 0, 0)" style="border: 0.0px;color: rgb(0,0,0);font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: inherit;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;">&nbsp;</span></li>
+        <li data-ogsc="rgb(0, 0, 0)" >A geojson graticule in 4326 and the appropriate UTM zone for the LOI.<span>&nbsp;</span></span><span data-ogsc="rgb(0, 0, 0)" style="border: 0.0px;color: rgb(0,0,0);font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: inherit;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;">&nbsp;</span></li>
+        <li data-ogsc="rgb(0, 0, 0)" >A<span>&nbsp;</span></span><span data-ogsc="rgb(149, 79, 114)" style="border: 0.0px;color: rgb(149,79,114);font-family: UICTFontTextStyleBody , serif;font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: inherit;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;"><u><a class="x_OWAAutoLink" data-auth="NotApplicable" data-linkindex="1" data-loopstyle="linkonly" data-ogsc="rgb(149, 79, 114)" href="https://www.naturalearthdata.com/downloads/50m-raster-data/50m-cross-blend-hypso/" id="OWAf4c5050f-81dc-dc4b-8abe-66013967361e" rel="noopener noreferrer"  target="_blank">Natural Earth Cross Blended Hypso with Shaded Relief and Water</a></u></span><span data-ogsc="rgb(0, 0, 0)">&nbsp;reprojected to an orthographic projection with the center on the LOI and a pixel size of 25,000 (in the video I make it at a&nbsp;&nbsp;pixel size of 10,000, but I want to keep your file sizes smaller).<span>&nbsp;</span></span><span data-ogsc="rgb(0, 0, 0)" style="border: 0.0px;color: rgb(0,0,0);font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: inherit;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;">&nbsp;</span></li>
+    </ul>
+    
+    <p><span data-ogsc="rgb(0, 0, 0)" style="border: 0.0px;color: rgb(0,0,0);font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: 400;letter-spacing: normal;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;">&nbsp;</span></p>
+    
+    <p><span data-ogsc="rgb(0, 0, 0)" >You will submit a zip file that contains:&nbsp;</span></p>
+    
+    <ol data-editing-info="{&quot;orderedStyleType&quot;:1}" data-listchain="__List_Chain_53" start="1">
+        <li data-ogsc="rgb(0, 0, 0)" >The reprojected raster (this should be less than 2MB in size),&nbsp;</span></li>
+        <li data-ogsc="rgb(0, 0, 0)" >the geoJSON point in the appropriate UTM*&nbsp;</span></li>
+        <li data-ogsc="rgb(0, 0, 0)" >the geoJSON graticule in the appropriate UTM<span>&nbsp;</span></span><span data-ogsc="rgb(0, 0, 0)" style="border: 0.0px;color: rgb(0,0,0);font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: inherit;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;">&nbsp;</span></li>
+        <li data-ogsc="rgb(0, 0, 0)" >and a csv table with the following information.</span><span data-ogsc="rgb(0, 0, 0)" style="border: 0.0px;color: rgb(0,0,0);font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: inherit;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;">&nbsp;</span></li>
+    </ol>
+    
+    <p><span data-ogsc="rgb(0, 0, 0)" style="border: 0.0px;color: rgb(0,0,0);font-family: UICTFontTextStyleBody , serif;font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: 400;letter-spacing: normal;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;">&nbsp;</span><span data-ogsc="rgb(0, 0, 0)" style="border: 0.0px;color: rgb(0,0,0);font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: 400;letter-spacing: normal;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;">&nbsp;</span></p>
+    
+    <p><span data-ogsc="rgb(0, 0, 0)" ></span><span data-ogsc="rgb(0, 0, 0)"  >The table should look like this.</span><span data-ogsc="rgb(0, 0, 0)" style="border: 0.0px;color: rgb(0,0,0);font-size: 13.0pt;font-stretch: inherit;font-style: inherit;font-weight: 400;letter-spacing: normal;line-height: inherit;margin: 0.0px;padding: 0.0px;vertical-align: baseline;">&nbsp;</span></p>
+    
+    <p><span data-ogsc="rgb(0, 0, 0)" >&nbsp;</span></p>
+    
+    <p><span data-ogsc="rgb(0, 0, 0)" >Name, x, y, EPSG, notes&nbsp;</span></p>
+    
+    <p><span data-ogsc="rgb(0, 0, 0)" >Old_well, -79.05123, 35.91206, 4326, units are in degrees.&nbsp;</span></p>
+    
+    <p><span data-ogsc="rgb(0, 0, 0)" >Old_well, -8799942.670181952416897, 4288527.700660364702344, 3857, units are in meters with x values negative since the location is west of the prime meridian.&nbsp;&nbsp;</span></p>
+    
+    <p><span data-ogsc="rgb(0, 0, 0)" >Old_well, 675843.467835035640746, 3975949.105584203265607, 32617, units are in meters and are all positive.&nbsp;</span></p>
+    
+    <p><span data-ogsc="rgb(0, 0, 0)" >&nbsp;</span></p>
+    
+    <p class="x_elementToProof"><span data-ogsc="rgb(0, 0, 0)" >*(Please do not submit the point geoJSONs in 4326 or 3857)&nbsp;&nbsp;</span></p>
+                        
+</body>
+<script src="../schedules/dates.js"></script>
+<script>
+UNCdates.sumDates()
+UNCdates.writeDates()
+// UNCdates.removeIfNotDate(14)
+</script>
+</html>
