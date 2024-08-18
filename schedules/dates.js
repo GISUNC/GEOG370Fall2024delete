@@ -71,11 +71,11 @@ var UNCdates = {
             var currentDate = new Date()
             console.log(currentDate)
             var tagDates = document.getElementsByClassName('date') 
-            var deadline = new Date(tagDates[0].innerHTML.split(' at 11:55 pm')[0])
+            var deadline = new Date(tagDates[0].innerHTML)//.split(' at 11:55 pm')[0])
             // I should create an error message 
             var delta = (deadline - currentDate)/ (60*60*24*1000)
             if (delta<days){return}
-            else {document.body.innerHTML = '' }
+            else {document.body.innerHTML = 'Thanks for checking the homework instructions early.<br> The instructions for this homework will be posted at least two weeks before the deadline.' }
     },
 
     addDatesToHTML(){
