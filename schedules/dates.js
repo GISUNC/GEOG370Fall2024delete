@@ -36,8 +36,8 @@ var UNCdates = {
             day2:'Introduction to data types and how we model the world',  
             day3:'Work with HW1 and GPS',
             day4:'GPS',
-            day5:'Practical Quiz 1',
-            day6:'Projections',
+            day5:'Projections',
+            day6:'Practical Quiz 1',
             day7:'Projections pt 2',
             day8:'Georeferencing',
             day9:'Tables', // Test
